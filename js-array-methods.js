@@ -35,5 +35,16 @@ barang.forEach(item => {
 adaBarangMahal = barang.some(item => item.harga > 10000000)
 semuaBarangMahal = barang.every(item => item.harga > 10000000)
 
+// reduce, return value
+total_harga = barang.reduce((total,item)=>{
+    return total + item.harga
+},0)
+
+// includes
+arr = [1,2,3,4,5,6,7,8]
+punya_7 = arr.includes(7)
+
 console.log(adaBarangMahal)
 console.log(semuaBarangMahal)
+console.log(total_harga)
+console.log(punya_7)
