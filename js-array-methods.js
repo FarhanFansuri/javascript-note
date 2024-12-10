@@ -44,6 +44,23 @@ total_harga = barang.reduce((total,item)=>{
 arr = [1,2,3,4,5,6,7,8]
 punya_7 = arr.includes(7)
 
+
+// flatMap
+const data = [
+    {
+    nama: "murid a",
+    nilai: [10,20,30,40]
+    },
+        {
+    nama: "murid b",
+    nilai: [10,20,30,40]
+    },
+    
+]
+
+console.log(data.flatMap(murid => murid.nilai))
+console.log(data.map(murid => murid.nilai))
+
 console.log(adaBarangMahal)
 console.log(semuaBarangMahal)
 console.log(total_harga)
