@@ -30,4 +30,10 @@ barang.forEach(item => {
         jumlah_barang_mahal++
     }
 })
-console.log(jumlah_barang_mahal)
+
+// some & every, mengembalikan boolean
+adaBarangMahal = barang.some(item => item.harga > 10000000)
+semuaBarangMahal = barang.every(item => item.harga > 10000000)
+
+console.log(adaBarangMahal)
+console.log(semuaBarangMahal)
